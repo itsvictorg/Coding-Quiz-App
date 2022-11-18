@@ -246,11 +246,15 @@ startButton.addEventListener('click', function(event){
     } else{
      
         secondsLeft =  secondsLeft - 5; 
+        alert('wrong! -5 seconds');
+
+
         };
+
     });
     //sets click target(answer selected) as a variable
     choiceList.addEventListener('click',  function(event){
-        console.log(event.target)
+       
         var selection = event.target;
 
 
@@ -275,10 +279,11 @@ startButton.addEventListener('click', function(event){
            answrBtns.setAttribute('data-choice', questions[2].choices[i]);
            choiceList.appendChild(answrBtns);
            answrBtns.textContent = choice;
+           console.log(questions[2].choice[0])
        
             }
         }else{
-    
+            
         }
     })
 
