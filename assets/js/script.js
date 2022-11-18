@@ -81,7 +81,7 @@ startButton.addEventListener('click', function(event){
                 input.type = "text";
                 input.className = "input-class"
                 input.placeholder = "Enter your name"
-                quizPage.appendChild(input);
+                saveElement.appendChild(input);
                 
                 var saveButton = document.createElement('button');
                 saveButton.textContent = 'Save Your Score'
@@ -130,7 +130,7 @@ startButton.addEventListener('click', function(event){
                 input.type = "text";
                 input.className = "input-class"
                 input.placeholder = "Enter your name"
-                quizPage.appendChild(input);
+                saveElement.appendChild(input);
 
                 var saveButton = document.createElement('button');
                 saveButton.textContent = 'Save Your Score';
@@ -145,6 +145,8 @@ startButton.addEventListener('click', function(event){
                 window.location.reload();
                 })
 
+
+                //saves user info and displays info
                 saveButton.addEventListener('click', function(){
                     var userScore = {
                         userName: input.value,
